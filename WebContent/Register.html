@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+</head>
+<body>
+<h1>Registration Form</h1>
+<hr>
+<form name="form1" method="POST" action="/ServletApplicationsDemo/Register">
+<table>
+<tbody>
+<tr>
+	<td>User Name : </td>
+	<td><input type ="text" name="userName"/></td>
+</tr>
+<tr>
+	<td>Password : </td>
+	<td><input type ="password" name="passwd"/></td>
+</tr>
+<tr>
+	<td>Sex : </td>
+	<td>
+		<input type ="radio" name="gender" value="Male"/>Male&nbsp;
+	    <input type ="radio" name="gender" value="Female"/>Female
+	</td>
+</tr>
+<tr>
+	<td>Hobbies : </td>
+	<td>
+		<input type ="checkbox" name="hobbies" value="Movies"/>Movies&nbsp;
+	 	<input type ="checkbox" name="hobbies" value="Music"/>Music&nbsp;
+	 	<input type ="checkbox" name="hobbies" value="Sports"/>Sports&nbsp;
+	</td>
+</tr>
+<tr>
+	<td> Country: </td>
+	<td>
+		<select name="Country">
+			<option value = "Australia">Australia</option>
+			<option value = "China">China</option>
+			<option value = "India">India</option>
+			<option value = "USA">USA</option>
+			<option value = "UK">UK</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td> Languages Known: </td>
+	<td>
+		<select name="test">
+			<option value = "Arabic">Arabic</option>
+			<option value = "Chinese">Chinese</option>
+			<option value = "French">French</option>
+			<option value = "Hindi">Hindi</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td>
+		<input type="submit" value="Register" name="btnRegister"/>
+		<input type="reset" value="Clear" name="btnClear"/>
+	</td>
+	
+</tr>
+
+</tbody>
+</table>
+</form>
+</body>
+</html>
