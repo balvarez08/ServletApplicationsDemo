@@ -9,12 +9,20 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <error-page>
+	  <error-code>404</error-code>
+	  <location>/ErrorHandlerServlet</location>
+  </error-page>
+  <error-page>
+	  <error-code>401</error-code>
+	  <location>/ErrorHandlerServlet</location>
+  </error-page>
   <filter>
-  <filter-name>Authenticate</filter-name>
-  <filter-class>com.pluralsight.demos.AuthenticationFilter</filter-class>
+    <filter-name>Authenticate</filter-name>
+    <filter-class>com.pluralsight.demos.AuthenticationFilter</filter-class>
   </filter>
   <filter-mapping>
-  <filter-name>Authenticate</filter-name>
-  <url-pattern>/SecuredServlet</url-pattern>
+    <filter-name>Authenticate</filter-name>
+    <url-pattern>/SecuredServlet</url-pattern>
   </filter-mapping>
 </web-app>
